@@ -1,0 +1,159 @@
+.contactbody {
+    height: 100%;
+    width: 100%;
+    background-image: url('z.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    width: 90%;
+    max-width: 800px;
+    margin: 10% auto;
+}
+
+#contact-contents {
+    width: 100%;
+    padding: 40px;
+    background-color: #1B4242;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+form input, form textarea, button {
+    border: 0;
+    outline: none;
+    margin-top: 30px;
+    display: block;
+    width: calc(100% - 8px);
+}
+
+form input, form textarea {
+    background: #092635;
+    padding: 8px;
+    color: white;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: white;
+}
+
+button {
+    background: rgba(17, 166, 253, 0.867);
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    padding: 8px 0;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(17, 166, 253, 1);
+}
+
+.bottom {
+    margin-top: 10%;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1B4242;
+    color: white;
+    text-align: center;
+}
+
+.socmed {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.socmed img {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.bottom p {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .write {
+        left: 10%;
+        transform: translateY(-40%);
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #contact-contents {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    .write {
+        left: 5%;
+        transform: translateY(-30%);
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+    }
+
+    #contact {
+        width: 100%;
+        margin: 20% auto;
+    }
+
+    #contact-contents {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

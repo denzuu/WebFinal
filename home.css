@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('z.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    width: 90%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: 5% auto;
+    color: white;
+    border-radius: 100px;
+}
+
+.box2 {
+    height: auto;
+    width: 90%;
+    max-width: 450px;
+    padding: 40px;
+    margin: 5% auto;
+    border-radius: 100px;
+}
+
+.box-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    padding: 10px 15px;
+    margin: 5% auto;
+}
+
+.box h1 {
+    font-size: 33px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+.box p {
+    text-align: center;
+    margin-top: 10%;
+    line-height: 35px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8%;
+}
+
+nav a {
+    float: right;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+span {
+    color: rgba(17, 166, 253, 0.867);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: rgba(17, 166, 253, 0.867);
+    transition: .4s;
+}
+
+.btn {
+    background-color: rgba(17, 166, 253, 0.867);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+}
+
+.write {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+    max-width: 90%;
+}
+
+h1 {
+    color: white;
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+h1:hover {
+    color: rgba(17, 166, 253, 0.867);
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 40px;
+    color: aliceblue;
+}
+
+h2:hover {
+    color: aqua;
+}
+
+h3 {
+    color: rgb(70, 97, 104);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h3:hover {
+    color: #135D66;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #77B0AA;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.vid {
+    height: 210px;
+    width: 250px;
+}
+
+.gals {
+    margin: 120px 60px;
+    background-color: #135D66;
+}
+
+.gals img {
+    height: 210px;
+    width: 250px;
+    padding: 3px;
+    filter: grayscale(100%);
+    transition: 1;
+}
+
+.gals img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.About {
+    display: flex;
+    text-align: center;
+    height: 200px;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 5%;
+    border-radius: 5px;
+    transition: 0.8s;
+    border-color: rgb(245, 202, 202);
+    border: 2px solid transparent;
+}
+
+.About:hover {
+    height: 400px;
+    width: 70%;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 70px;
+    font-size: 40px;
+    border: 1px solid rgb(231, 214, 214);
+    box-shadow: 0 0 0 2px #d0d0d0;
+}
+
+.up {
+    font-size: 25px;
+}
+
+.l {
+    color: black;
+    font-family: Poppins;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .write {
+        left: 10%;
+        transform: translateY(-40%);
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    .write {
+        left: 5%;
+        transform: translateY(-30%);
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+    }
+}
